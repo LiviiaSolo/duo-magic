@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Duo-Magic</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Splide Carousel -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__nav">
+          <a id="logo" href="#" class="site__logo">
+            <img
+              class="logo-img"
+              src="./img/logo-heder.svg"
+              alt="логотип сайту"
+            />
+          </a>
+      
+          <nav class="menu" id="menu">
+            <div class="menu-nav">
+              <a class="menu-title" href="#section__show">Шоу-програми</a>
+            </div>
+            <div class="menu-nav">
+              <a class="menu-title" href="#section__services">Послуги</a>
+            </div>
+            <div class="menu-nav">
+              <a class="menu-title" href="#section__charity">Благодійність</a>
+            </div>
+            <div class="menu-nav">
+              <a class="menu-title" href="blog.html">Блог</a>
+            </div>
+            <div class="menu-nav">
+              <a class="menu-title" href="#footer">Контакти</a>
+            </div>            
+          </nav>
+          <div class="hamb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- <main> -->
+      
+    <!-- hero -->
+    <div id="hero" class="hero">
+      <div class="container">
+        <div class="greeting" data-aos="fade-up" >
+          <h1>все, що потрібно для гарного свята</h1>
+          <p>Організовуємо дитячі та дорослі свята на будь-який смак!</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- section__show -->
+    <section id="section__show" class="section__show">
+      <div class="container">
+      <h2 class="title" data-aos="fade-up">наші шоу-програми</h2>
+      <p class="subtitle" data-aos="fade-up" >
+        У нас Ви можете замовити: Шоу мильних бульбашок, Твістинг шоу, Шоу
+        повітряних кульок, Неонове шоу повітряних кульок, інші розваги до Вашого
+        Свята!
+      </p>
+      <ul class="show-list" data-aos="fade-up">
+        <li class="show-card">
+          <a id="open-bubbleshow-modall-btn" href="#content-container">
+            <img src="./img/picture.jpg" alt="" width="" height="" />
+            <div class="content-container">
+              <div class="content-show">
+                <div class="content green">
+                  <h3 class="show-title">Шоу мильних <br> бульбашок</h3>
+                  <p>Тривалість шоу 45 хв</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="show-card">
+          <a id="open-neonshow-modall-btn" href="#content-container"
+            ><img src="./img/picture-1.jpg" alt="" />
+            <div class="content-container">
+              <div class="content-show">
+                <div class="content blue">
+                  <h3 class="show-title">Неонове шоу мильних бульбашок</h3>
+                  <p>Тривалість шоу 30 хв</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="show-card">
+          <a id="open-balloonshow-modall-btn" href="#content-container"
+            ><img src="./img/picture-2.jpg" alt="" />
+            <div class="content-container">
+              <div class="content-show">
+                <div class="content pink">
+                  <h3 class="show-title">
+                    Твістинг <br />
+                    шоу
+                  </h3>
+                  <p>Тривалість шоу 30 хв</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="show-card">
+          <a id="open-neonballoon-modall-btn" href="#content-container"
+            ><img src="./img/picture-3.jpg" alt="" />
+            <div class="content-container">
+              <div class="content-show">
+                <div class="content violet">
+                  <h3 class="show-title">Glow <br />Show</h3>
+                  <p>Тривалість шоу 30 хв.</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      </div>
+    </section>
+
+     <!-- services -->
+    <section id="section__services" class="section__services">
+      <div class="container">
+      <h2 class="title" data-aos="fade-up">Інші послуги</h2>
+      <p class="subtitle" data-aos="fade-up">
+        У нас Ви можете замовити: Шоу мильних бульбашок, Твістинг шоу, Шоу
+        повітряних кульок, Неонове шоу повітряних кульок, інші розваги до Вашого
+        Свята!
+      </p>
+      <div class="services-container">
+        <ul class="section__services-list" data-aos="fade-up">
+          <li class="item" id="open-quest-modall-btn">
+            <a class="services-link" href="#section__services-list">Квести</a>
+          </li>
+          <li class="item" id="open-livemusic-modall-btn">
+            <a class="services-link" href="#section__services-list"
+              >Жива музика</a
+            >
+          </li>
+          <li class="item" id="open-twist-modall-btn">
+            <a class="services-link" href="#section__services-list">Твістинг</a>
+          </li>
+          <li
+            class="item"
+            style="text-align: center"
+            id="open-surball-modall-btn"
+          >
+            <a class="services-link" href="#section__services-list"
+              >Кулька-сюрприз</a
+            >
+          </li>
+          <li class="item" id="open-aqua-modall-btn">
+            <a class="services-link" href="#section__services-list">Аквагрим</a>
+          </li>
+          <li class="item" id="open-tatu-modall-btn">
+            <a class="services-link" href="#section__services-list"
+              >Блиск-Тату</a
+            >
+          </li>
+          <li
+            class="item"
+            style="text-align: center"
+            id="open-master-modall-btn"
+          >
+            <a class="services-link" href="#section__services-list"
+              >Майстер-класи</a
+            >
+          </li>
+          <li class="item">          
+            <a class="services-link" href="game.html"
+            target="_blank">Game</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section id="section__charity" class="section__charity">
+      <div class="container">
+      <h2 class="title" data-aos="fade-up">наша благодійна діяльність</h2>
+      <p class="subtitle" data-aos="fade-up">Дитячі посмішки варті усіх зусиль!</p>
+
+      <div class="wrapper">
+        <div class="gallery" data-aos="fade-up">
+          <div class="scroller">
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="0"
+            >
+              <img
+                src="img/charity/evro1.jpeg"
+                alt="Charity performance 1"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="1"
+            >
+              <img
+                src="img/charity/evro2.jpeg"
+                alt="Charity performance 2"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="2"
+            >
+              <img
+                src="img/charity/evro3.jpg"
+                alt="Charity performance 3"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="3"
+            >
+              <img
+                src="img/charity/evro4.jpg"
+                alt="Charity performance 4"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="4"
+            >
+              <img
+                src="img/charity/evro5.jpg"
+                alt="Charity performance 5"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="5"
+            >
+              <img
+                src="img/charity/evro6.jpg"
+                alt="Charity performance 6"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="6"
+            >
+              <img
+                src="img/charity/evro7.jpg"
+                alt="Charity performance 7"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="7"
+            >
+              <img
+                src="img/charity/evro8.jpg"
+                alt="Charity performance 8"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="8"
+            >
+              <img
+                src="img/charity/evro9.jpg"
+                alt="Charity performance 9"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="9"
+            >
+              <img
+                src="img/charity/evro10.jpg"
+                alt="Charity performance 10"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="10"
+            >
+              <img
+                src="img/charity/evro11.jpg"
+                alt="Charity performance 11"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="11"
+            >
+              <img
+                src="img/charity/evro12.jpeg"
+                alt="Charity performance 12"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="12"
+            >
+              <img
+                src="img/charity/evro13.jpg"
+                alt="Charity performance 13"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="13"
+            >
+              <img
+                src="img/charity/evro14.jpg"
+                alt="Charity performance 14"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="14"
+            >
+              <img
+                src="img/charity/evro15.jpg"
+                alt="Charity performance 15"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="15"
+            >
+              <img
+                src="img/charity/evro16.jpg"
+                alt="Charity performance 16"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="16"
+            >
+              <img
+                src="img/charity/evro17.jpg"
+                alt="Charity performance 17"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="17"
+            >
+              <img
+                src="img/charity/evro18.jpg"
+                alt="Charity performance 18"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="18"
+            >
+              <img
+                src="img/charity/evro19.jpg"
+                alt="Charity performance 19"
+                class="charity-photo"
+              />
+            </button>
+            <button
+              class="gallery-modal-btn"
+              data-micromodal-trigger="modal"
+              data-index="19"
+            >
+              <img
+                src="img/charity/evro20.jpg"
+                alt="Charity performance 20"
+                class="charity-photo"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-title"
+        >
+          <header class="modal__header">
+            <h3 class="modal__title" id="modal-title">
+              Наші благодійні виступи
+            </h3>
+            <button
+              class="modal__close"
+              aria-label="Close modal"
+              data-micromodal-close
+            >
+              <img src="./img/close-icon.svg" alt="" />
+            </button>
+          </header>
+          <main class="modal__content" id="modal-content">
+            <div class="splide" role="group" aria-label="city-gallery">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="img/charity/evro1.jpeg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro2.jpeg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro3.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro4.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro5.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro6.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro7.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro8.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro9.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro10.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                     <img src="img/charity/evro11.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro12.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro13.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro14.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro15.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro16.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro17.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro18.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro19.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="img/charity/evro20.jpg" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <!-- </main> -->
+
+    <footer id="footer" class="footer">
+      <div class="herofooter">
+        <div class="container footer__container">
+          <div class="footer__logo">
+            <a href="#hero"><img
+              class="footer__logo-img"
+              src="./img/logo-footer.svg"
+              alt="логотип сайту"
+              width="50px"
+              height="50px"
+            /></a>
+             <!-- Тут буде випадковий заголовок -->
+            <h3 id="footer-heading"></h3>
+          </div>
+          
+          <div class="social">
+            <ul class="contact-list">
+              <li class="contact-item">
+                Телефон:
+                <a class="contact-tel" href="tel:+38093#"
+                  >+ 38 (093) 610 16 12</a
+                >
+              </li>
+              <li class="contact-item">
+                Email:
+                <a class="contact-email" href="mailto:#"
+                  >duomagicplay@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container network-social">
+          <div class="network">
+            <ul class="footer-medias-list d-flex align-items-center">
+              <li class="footer-medias-item">
+                <a
+                  href="https://www.facebook.com/duomagicplay"
+                  target="_blank"
+                  class="rounded-circle"
+                >
+                  <i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="footer-medias-item">
+                <a
+                  href="https://www.instagram.com/duomagicplay"
+                  target="_blank"
+                  class="rounded-circle"
+                >
+                  <i class="fa-brands fa-instagram"> </i
+                ></a>
+              </li>
+              <li class="footer-medias-item">
+                <a
+                  href="https://www.youtube.com/channel/UCdrvxr0ZyG0c79tGmWGSY4w"
+                  target="_blank"
+                  class="rounded-circle"
+                >
+                  <i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+              <li class="footer-medias-item">
+                <a href="#" class="rounded-circle">
+                  <i class="fa-brands fa-viber"></i
+                ></a>
+              </li>
+              <li class="footer-medias-item">
+                <a href="@DuoMagicPlay" class="rounded-circle">
+                  <i class="fa-brands fa-telegram"></i
+                ></a>
+              </li>
+              <li class="footer-medias-item">
+                <a href="#" class="rounded-circle">
+                  <i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-info__copyright">
+            <p class="footer-info__copyright-link">
+              &copy; 2024 Duo Magic Play.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--===== Modal-bubbleshow======  -->
+    <div class="modwind" id="bubbleshow-modall">
+      <div class="modall__box">
+        <button class="modall__close-btn" id="close-bubbleshow-modall-btn">
+          <img src="./img/close-icon.svg" alt="" />
+        </button>
+        <h2 class="mod-title">Шоу мильних бульбашок</h2>
+        <div class="mod-wind">
+          <ul class="mod-tatu bubbleshow">
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/bubbleshow/show-bubl-1.jpg"
+                alt=""
+              />
+            </li>
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/bubbleshow/show-bubl-2.jpg"
+                alt=""
+              />
+            </li>
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/bubbleshow/show-bubl-3.jpg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <p class="mod-descript">
+          Найяскравіше і красиве Шоу – це Шоу мильних бульбашок!
+        </p>
+        <p class="mod-text">
+          Виявляється мильні бульбашки не тільки вміють літати і переливатися
+          райдужними квітами.
+          <br />Вони бувають величезними і крихітними, димними, кольоровими і
+          навіть вогняними. <br />Вміють будувати вежі і неймовірні фігури.
+          <br />А ще є такі бульбашки в які можна навіть залізти всередину!
+          <br />Шоу для дітей та дорослих! Тривалість шоу 30 хв та 45 хв
+        </p>
+      </div>
+    </div>
+    <!--=====Modal-neonshow-======-->
+    <div class="modwind" id="neonshow-modall">
+      <div class="modall__box">
+        <button class="modall__close-btn" id="close-neonshow-modall-btn">
+          <img src="./img/close-icon.svg" alt="" />
+        </button>
+        <h2 class="mod-title">Неонове шоу мильних бульбашок</h2>
+        <div class="mod-wind">
+          <ul class="mod-tatu neonshow">
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/neonshow/neonshow-1.jpg" alt="" />
+            </li>
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/neonshow/neonshow-2.jpg" alt="" />
+            </li>
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/neonshow/neonshow-3.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <p class="mod-descript">
+          Шоу з неоновими мильними бульбашками, що світяться в ультрафіолетовому
+          випромінюванні.
+        </p>
+        <p class="mod-text">
+          Під час шоу Ви побачите неймовірні красиві трюки з мильними
+          бульбашками.
+          <br />Поринете у справжню казку з мильних бульбашок, світла та вогню!
+          <br />Крім незвичайного яскравого шоу Вас чекає ще й величезна мильна
+          бульбашка, що світиться, всередині якої Ви побуваєте! Тривалість шоу:
+          30 хв.
+        </p>
+      </div>
+    </div>
+    <!--=====Modal-balloonshow======-->
+    <div class="modwind" id="balloonshow-modall">
+      <div class="modall__box">
+        <button class="modall__close-btn" id="close-balloonshow-modall-btn">
+          <img src="./img/close-icon.svg" alt="" />
+        </button>
+        <h2 class="mod-title">Твістинг шоу</h2>
+        <div class="mod-wind">
+          <ul class="mod-tatu balloonshow">
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/balloonshow/ballon-1.jpg"
+                alt=""
+              />
+            </li>
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/balloonshow/ballon-2.jpg"
+                alt=""
+              />
+            </li>
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/balloonshow/ballon-3.jpg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <p class="mod-descript">
+          Твістинг шоу – унікальне у своєму роді шоу повітряних кульок.
+        </p>
+        <p class="mod-text">
+          Артисти  прямо у Вас на очах створюють неймовірні речі з кульок.
+          <br />Всі створені під час шоу іграшки та аксесуари даруються
+          глядачам. <br />А родзинкою всього Шоу – стане величезна Куля-Сюрприз,
+          всередині якої цілий салют з повітряних кульок та конфетті!
+          <br />Тривалість шоу 30хв.
+        </p>
+      </div>
+    </div>
+
+    <!--=====Modal-neonballoon-======-->
+    <div class="modwind" id="neonballoon-modall">
+      <div class="modall__box">
+        <button class="modall__close-btn" id="close-neonballoon-modall-btn">
+          <img src="./img/close-icon.svg" alt="" />
+        </button>
+        <h2 class="mod-title">Неонове шоу повітряних кульок</h2>
+        <div class="mod-wind">
+          <ul class="mod-tatu neonballoon">
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/neonballoonshow/neonov-1.jpg"
+                alt=""
+              />
+            </li>
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/neonballoonshow/neonov-2.jpg"
+                alt=""
+              />
+            </li>
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/neonballoonshow/neonov-3.jpg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <p class="mod-descript">
+          Це незвичайне шоу з неонових кульок зі світловими ефектами.
+        </p>
+        <p class="mod-text">
+          Ви зануритесь в світ справжніх драконів та їх витворів мистецтва.
+          <br />Під час шоу використовується ультрафіолетове освітлення.
+          <br />Тобто шоу для вечірнього показу або для показу в темному
+          приміщенні. Ідеально для поєднання з Неоновим шоу мильних бульбашок.
+          Всі створені з кульок іграшки даруються глядачам. Тривалість шоу: 30 -
+          45 хв.
+        </p>
+      </div>
+    </div>
+
+    <!-- Вікна послуги -->
+
+    <!-- Modal-quest -->
+    <div class="modwind" id="quest-modall">
+      <div class="modall__box">
+        <button class="modall__close-btn" id="close-quest-modall-btn">
+          <img src="./img/close-icon.svg" alt="" />
+        </button>
+        <h2 class="mod-title">Квести</h2>
+        <div class="mod-wind">
+          <ul class="mod-tatu quest">
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/quests/kvest11.jpg" alt="" />
+            </li>
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/quests/kvest22.jpg" alt="" />
+            </li>
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/quests/kvest33.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <p class="mod-descript">Однією з наших додаткових послуг є Квести.</p>
+        <p class="mod-text">
+          Тему квесту можна вибирати будь-яку, в залежності від побажань дитини.
+          <br />Кожен квест створюється індивідуально під місцевість і по темі
+          свята, тож Ви можете бути впевнені, що Ваш квест вже ніколи не
+          повториться. Але якщо Ви вже бували на наших квестах, і хочете
+          замовити ту ж тему свята, варто про це згадати, щоб не повторювалися
+          призи та дипломи / посвідчення / медалі. Ми розробимо для Вас щось
+          нове.
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal-livemusic -->
+    <div class="modwind" id="livemusic-modall">
+      <div class="modall__box">
+        <button class="modall__close-btn" id="close-livemusic-modall-btn">
+          <img src="./img/close-icon.svg" alt="" />
+        </button>
+        <h2 class="mod-title">Жива музика</h2>
+        <div class="mod-wind">
+          <ul class="mod-tatu livemusic">
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/music/band-1.jpg" alt="" />
+            </li>
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/music/band-2.jpg" alt="" />
+            </li>
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/music/band-3.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <p class="mod-descript">
+          Brass band
+          <a
+            class="shoes-link"
+            href="https://yellowshoes.com.ua/"
+            target="_blank"
+            ><span class="shoes">“Yellow Shoes”</span></a
+          >
+          створить незабутню атмосферу Вашому святі!
+        </p>
+        <p class="mod-text">
+          В репертуарі колективу є все від джазових стандартів, сучасних
+          композицій, мотивів з кінофільмів до дитячих пісеньок. Хлопці дійсно
+          зможуть озвучити будь-яке свято. <br />Також вони виконують
+          нестандартні побажання клієнтів: наприклад, можуть зіграти серенаду
+          під вікном коханої або виконати улюблену пісню іменинника!
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal-twisting-->
+    <div class="modwind" id="twist-modall">
+      <div class="modall__box">
+        <button class="modall__close-btn" id="close-twist-modall-btn">
+          <img src="./img/close-icon.svg" alt="" />
+        </button>
+        <h2 class="mod-title">Твістинг</h2>
+        <div class="mod-wind">
+          <ul class="mod-tatu twist">
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/twisting/tvist-1.jpg" alt="" />
+            </li>
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/twisting/tvist-2.jpg" alt="" />
+            </li>
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/twisting/tvist-3.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <p class="mod-descript">Твістинг - це чудове допонення Вашого свята</p>
+        <p class="mod-text">
+          Твістинг – це моделювання та створення іграшок із повітряних кульок.
+          <br />Яскраві іграшки із повітряних кульок доповнять та прикрасять
+          будь-яку важливу подію. Це одночасно і увага до кожного гостя та
+          маленький подарунок у вигляді іграшки із повітряної кульки.
+        </p>
+      </div>
+    </div>
+
+    <!-- Кулька-сюрприз-->
+    <div class="modwind" id="surball-modall">
+      <div class="modall__box">
+        <button class="modall__close-btn" id="close-surball-modall-btn">
+          <img src="./img/close-icon.svg" alt="" />
+        </button>
+        <h2 class="mod-title">Кулька-сюрприз</h2>
+        <div class="mod-wind">
+          <ul class="mod-tatu surball">
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/surprise-ball/surp-1.jpg"
+                alt=""
+              />
+            </li>
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/surprise-ball/surp-2.jpg"
+                alt=""
+              />
+            </li>
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/surprise-ball/surp-3.jpg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <p class="mod-descript">
+          КУЛЬКА-СЮРПРИЗ – це яскравий і видовищний пік Вашого свята!.
+        </p>
+        <p class="mod-text">
+          Що таке КУЛЬКА-СЮРПРИЗ?
+          <br />Це величезна повітряна кулька, всередині якої знаходиться безліч
+          маленьких кульок. <br />
+          За бажанням туди ж можна додавати конфетті, гроші, цукерки або
+          невеликі подарунки (залежить від розміру основної кулі). <br />Таку
+          кульку можна подарувати просто для підняття настрою. <br />В неї можна
+          заховати цікавий подарунок.
+        </p>
+
+        <p class="mod-ball">
+          <br />Розміри кульки: <br />Маленька - 50 см в діаметрі. <br />Велика
+          - 80 см в діаметрі. <br />Також є розміри 1м, 1,75м, 2м.
+        </p>
+      </div>
+    </div>
+
+    <!-- Аквагрим-->
+    <div class="modwind" id="aqua-modall">
+      <div class="modall__box">
+        <button class="modall__close-btn" id="close-aqua-modall-btn">
+          <img src="./img/close-icon.svg" alt="" />
+        </button>
+        <h2 class="mod-title">Аквагрим</h2>
+        <div class="mod-wind">
+          <ul class="mod-tatu aqua">
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/aquagrim/aquagrim-1.jpg" alt="" />
+            </li>
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/aquagrim/aquagrim-2.jpg" alt="" />
+            </li>
+            <li class="mod-photo">
+              <img class="mod-img" src="./img/aquagrim/aquagrim-3.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <p class="mod-descript">Аквагрим – унікальний додаток на Ваше свято!</p>
+        <p class="mod-text">
+          Професійний аквагрим для дорослих та дітей. <br />На весілля. <br />На
+          день Народження. <br />На корпоратив. <br />Замовте аквагрим та будьте
+          ким завгодно!
+        </p>
+      </div>
+    </div>
+
+    <!-- Блиск-Тату-->
+    <div class="modwind" id="tatu-modall">
+      <div class="modall__box">
+        <button class="modall__close-btn" id="close-tatu-modall-btn">
+          <img src="./img/close-icon.svg" alt="" />
+        </button>
+        <h2 class="mod-title">Блиск-Тату</h2>
+        <div class="mod-wind">
+          <ul class="mod-tatu">
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/glitter-tattoo/modal1.jpg"
+                alt=""
+              />
+            </li>
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/glitter-tattoo/modal2.jpg"
+                alt=""
+              />
+            </li>
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/glitter-tattoo/modal3.jpg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <p class="mod-descript">
+          Однією з наших додаткових послуг є Блиск-Тату.
+        </p>
+        <p class="mod-text">
+          Це яскраве тимчасове татуювання сподобається дорослим і дітям,
+          хлопчикам і дівчаткам будь-якого віку. <br />Діти вибирають картинки
+          собі самі, також вони вирішують якого кольору буде картинка від
+          яскравих блискіток, до матового чорного. Всі трафарети разові і
+          повторно не використовуються. Таке татуювання тримається приблизно від
+          3-4 до 7 днів. Зняти її можна за бажанням в будь-який день. Досить
+          тільки потерти місце татуювання мочалкою.
+        </p>
+      </div>
+    </div>
+
+    <!-- Майстер-класи-->
+    <div class="modwind" id="master-modall">
+      <div class="modall__box">
+        <button class="modall__close-btn" id="close-master-modall-btn">
+          <img src="./img/close-icon.svg" alt="" />
+        </button>
+        <h2 class="mod-title">Майстер-класи</h2>
+        <div class="mod-wind">
+          <ul class="mod-tatu master">
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/master-glases/master-1.jpg"
+                alt=""
+              />
+            </li>
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/master-glases/master-2.jpg"
+                alt=""
+              />
+            </li>
+            <li class="mod-photo">
+              <img
+                class="mod-img"
+                src="./img/master-glases/master-3.jpg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <p class="mod-descript">
+          Будь-яке свято можна зробити не тільки веселим, але й розвиваючим.
+        </p>
+        <p class="mod-text">
+          На наших Майстер-Класах Ви та Ваші гості зможете навчитися ліпити з
+          пластиліну і полімерної глини. <br />Створювати картинки із стружки
+          від кольорових та воскових олівців. <br />Малювати на листі,
+          створювати об’ємні листівки. <br />Робити квіти з гофрованого паперу,
+          букети і тваринок з цукерок. <br />Робити фігурки з пап’є маше,
+          створювати іграшки з повітряних куль. <br />Навчитесь майстерності
+          орігамі. <br />Зможете створювати музику з усього, що знаходиться під
+          рукою.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- External Libraries -->
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+
+    <!-- Custom Scripts -->
+    <script src="js/hamb_menu.js" defer></script>
+    <script src="js/modal.win.js" defer></script>
+    <script src="js/slider-modal.js" defer></script>
+    <script src="js/slogan.js" defer></script>
+
+  </body>
+</html>
