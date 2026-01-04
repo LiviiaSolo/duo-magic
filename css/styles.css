@@ -176,7 +176,7 @@ body {
 .menu-title {
   text-decoration: none;
   color: #011739;
-  font-weight: 700;
+  font-weight: 600;
   font-size: clamp(20px, 1.5vw, 26px);
   letter-spacing: 0.5px;
   transition: color 0.3s ease;
@@ -1806,12 +1806,20 @@ body {
 }
 
 @media (max-width: 1280px) {
+  .hero-blog {
+    margin-bottom: 70px;
+  }
+
   .blog {
     margin-bottom: 70px;
   }
 }
 
 @media (max-width: 1080px) {
+  .hero-blog {
+    margin-bottom: 60px;
+  }
+
   .blog {
     margin-bottom: 60px;
   }
@@ -1840,6 +1848,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .hero-blog {
+    margin-bottom: 40px;
+  }
+
   .blog {
     margin-bottom: 40px;
   }
@@ -1893,7 +1905,7 @@ body {
 
 /* Section__creation */
 .creation {
-  margin: 0 auto 70px;
+  margin: 0 auto 80px;
 }
 
 .creation__inner {
@@ -2083,7 +2095,7 @@ body {
 /* PAGE-BLOG */
 .page-blog__section {
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .page-blog__title {
@@ -2117,6 +2129,7 @@ body {
   letter-spacing: 0.5px;
   text-align: justify;
   color: #2c2c2c;
+  padding-top: 4px;
 }
 
 .page-photo {
@@ -2153,6 +2166,18 @@ body {
   list-style-position: outside;
 }
 
+@media (max-width: 1280px) {
+  .page-blog__section {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .page-blog__section {
+    margin-bottom: 60px;
+  }
+}
+
 @media (max-width: 1020px) {
   .hero-blog .container {
     margin-bottom: 50px;
@@ -2160,6 +2185,12 @@ body {
 
   .page-blog__section {
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-blog__section {
+    margin-bottom: 40px;
   }
 }
 
@@ -2192,7 +2223,7 @@ body {
 /* MASTER-CLASS */
 .page-master__section {
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .page-master__item {
@@ -2426,6 +2457,12 @@ body {
   }
 }
 
+@media (max-width: 1280px) {
+  .page-master__section {
+    margin-bottom: 70px;
+  }
+}
+
 @media (max-width: 1250px) {
   .work-photo2 {
     width: 100%;
@@ -2441,6 +2478,12 @@ body {
 @media (max-width: 1228px) {
   .works__photo {
     gap: 60px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .page-master__section {
+    margin-bottom: 60px;
   }
 }
 
@@ -2494,6 +2537,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .page-master__section {
+    margin-bottom: 40px;
+  }
+
   .works__gallery {
     display: none;
   }
