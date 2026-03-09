@@ -1,4 +1,4 @@
-      // Попап-вікно для відео
+      // Попап-вікно для відео мастер-класу
       const openBtn = document.getElementById('open-video-popup');
       const closeBtn = document.getElementById('close-video-popup');
       const modal = document.getElementById('video-modal');

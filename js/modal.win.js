@@ -61,8 +61,8 @@ window.addEventListener("keydown", (e) => {
 AOS.init({
   duration: 800,
   easing: 'ease-out',
-  once: false,     // ❗ дозволяє повторну анімацію при скролі
-  mirror: true     // ❗ анімація працює і при скролі назад
+  once: false,     //  дозволяє повторну анімацію при скролі
+  mirror: true     //  анімація працює і при скролі назад
 });
 
 

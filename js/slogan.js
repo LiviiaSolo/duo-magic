@@ -106,5 +106,3 @@ gsap.utils.toArray(".creation__item").forEach(card => {
 
 
 
-// ------------
-
