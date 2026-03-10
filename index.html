@@ -1,42 +1,40 @@
-<!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Duo-Magic</title>
+  <title>Duo-Magic</title>
+  <meta name="description" content="Duo-Magic — шоу-програми, послуги та організація свят для дітей і дорослих." />
+  <meta name="author" content="Duo-Magic Team" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Duo-Magic — Шоу-програми та організація свят" />
+  <meta property="og:description" content="Замовляйте шоу-програми, розваги та організацію свят на будь-який смак." />
+  <meta property="og:type" content="website" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Splide Carousel -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-      rel="stylesheet"
-    />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap"
+    rel="stylesheet" />
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
-  </head>
+  <!-- Splide CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
   <body>
     <header class="header">
       <div class="header__container">
@@ -79,7 +77,9 @@
       
     <!-- hero -->
     <div id="hero" class="hero">
-      <div class="hero-bg"></div>
+      <div class="hero-bg">
+        <img src="./img/hero-bg.png" alt="Hero background">
+      </div>
       <div class="container">
         <div class="greeting" data-aos="fade-up" >
           <h1>все, що потрібно для гарного свята</h1>
@@ -507,7 +507,7 @@
                      <img src="img/charity/evro11.jpg" alt="" />
                   </li>
                   <li class="splide__slide">
-                    <img src="img/charity/evro12.jpg" alt="" />
+                    <img src="img/charity/evro12.jpeg" alt="" />
                   </li>
                   <li class="splide__slide">
                     <img src="img/charity/evro13.jpg" alt="" />
@@ -1082,21 +1082,20 @@
       </div>
     </div>
 
-
-    <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-    <!-- External Libraries -->
-    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
-
-    <!-- Custom Scripts -->
-    <script src="js/hamb_menu.js" defer></script>
-    <script src="js/modal.win.js" defer></script>
-    <script src="js/slider-modal.js" defer></script>
-    <script src="js/slogan.js" defer></script>
+      <!-- GSAP -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+      
+      <!-- AOS JS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      
+      <!-- Splide JS -->
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+      
+      <!-- MicroModal -->
+      <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+      
+      <script src="./js/script.js" defer></script>
 
   </body>
 </html>
