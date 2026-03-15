@@ -543,15 +543,16 @@ body {
   flex-wrap: wrap;
   flex-basis: calc((100% - 3 * 20px) / 4);
   margin-top: 40px;
-  transition: transform 0.3s ease;
+  transition: transform .3s ease;
 }
 
 .show-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 } 
 
 .show-card img {
   width: 100%;
+  
 }
 
 .show-card a {
@@ -583,6 +584,7 @@ body {
   background-image: url('../img/play2.png');
   background-size: cover;
   text-decoration: none;
+  margin-top: 2px;
   margin-bottom: 0;
   width: 100%;
 }
@@ -793,11 +795,11 @@ body {
   align-items: center;
   border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.3s ease; 
+  transition: transform .3s ease; 
 }
 
 .item:hover {
-  transform: scale(1.06);
+  transform: scale(1.04);
 }
 
 .services-link {
@@ -813,7 +815,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
@@ -1965,9 +1966,10 @@ body {
 }
 
 .creation__item:hover .creation__descript-title {
-  transform: scale(1.05);
+  transform: scale(1.04);
   color: #8e00aa;
 }
+
 .creation__descript {
   display: flex;
   flex-direction: column;

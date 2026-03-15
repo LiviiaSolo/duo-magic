@@ -1,61 +1,65 @@
-
-// //  Масив усіх ID модалок
+// Усі модалки
 const allModalIds = [
-  "quest", 
-  "livemusic", 
-  "twist", 
-  "surball", 
-  "aqua", 
-  "tatu", 
-  "master",
-  "bubbleshow", 
-  "balloonshow", 
-  "neonshow", 
-  "neonballoon"
+  // Програми
+  "program-quest",
+  "program-livemusic",
+  "program-twist",
+  "program-surball",
+  "program-aqua",
+  "program-tatu",
+  "program-master",
+  // Шоу
+  "service-bubbleshow",
+  "service-neonshow",
+  "service-balloonshow",
+  "service-neonballoon"
 ];
 
 // Ініціалізація модалок
 allModalIds.forEach((id) => {
-  const openBtn = document.getElementById(`open-${id}-modall-btn`);
-  const closeBtn = document.getElementById(`close-${id}-modall-btn`);
-  const modal = document.getElementById(`${id}-modall`);
-  const modalInner = modal?.querySelector(".mod-descript");
+  const openBtn = document.getElementById(`open-${id}-modal-btn`);
+  const closeBtn = document.getElementById(`close-${id}-modal-btn`);
+  const modal = document.getElementById(`${id}-modal`);
+  const modalInner = modal?.querySelector(".modall__box");
 
-  if (!openBtn || !closeBtn || !modal || !modalInner) {
-    console.warn(` Модалка "${id}" не знайдена повністю в DOM`);
+  if (!modal || !openBtn || !closeBtn || !modalInner) {
+    console.warn(`Модалка "${id}" або кнопки не знайдено в DOM`);
     return;
   }
 
   // Відкрити
-  openBtn.addEventListener("click", () => modal.classList.add("open"));
+  openBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.classList.add("open");
+  });
 
   // Закрити по кнопці
   closeBtn.addEventListener("click", () => modal.classList.remove("open"));
 
-  // Клік всередині — не закриває
+  // Клік всередині модалки — не закриває
   modalInner.addEventListener("click", (e) => {
-    e._isClickWithinModal = true;
+    e._inside = true;
   });
 
-  // Клік поза — закриває
+  // Клік поза модалкою — закриває
   modal.addEventListener("click", (e) => {
-    if (e._isClickWithinModal) return;
+    if (e._inside) {
+      e._inside = false;
+      return;
+    }
     modal.classList.remove("open");
   });
 });
 
-// Закриття відкритої модалки через Esc
+// Закрити всі модалки по Esc
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     allModalIds.forEach((id) => {
-      const modal = document.getElementById(`${id}-modall`);
-      if (modal?.classList.contains("open")) {
-        modal.classList.remove("open");
-      }
+      const modal = document.getElementById(`${id}-modal`);
+      modal?.classList.remove("open");
     });
   }
 });
-
 
 
 // AOS initialization
