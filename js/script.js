@@ -1,65 +1,40 @@
-// Усі модалки
-const allModalIds = [
-  // Програми
-  "program-quest",
-  "program-livemusic",
-  "program-twist",
-  "program-surball",
-  "program-aqua",
-  "program-tatu",
-  "program-master",
-  // Шоу
-  "service-bubbleshow",
-  "service-neonshow",
-  "service-balloonshow",
-  "service-neonballoon"
-];
 
-// Ініціалізація модалок
-allModalIds.forEach((id) => {
-  const openBtn = document.getElementById(`open-${id}-modal-btn`);
-  const closeBtn = document.getElementById(`close-${id}-modal-btn`);
-  const modal = document.getElementById(`${id}-modal`);
-  const modalInner = modal?.querySelector(".modall__box");
-
-  if (!modal || !openBtn || !closeBtn || !modalInner) {
-    console.warn(`Модалка "${id}" або кнопки не знайдено в DOM`);
-    return;
+// // Universal Modal Manager
+document.addEventListener("click", (e) => {
+  const openBtn = e.target.closest('[id^="open-"][id$="-modal-btn"]');
+  
+  if (openBtn) {
+    e.preventDefault();
+    const id = openBtn.id.replace("open-", "").replace("-modal-btn", "");
+    const modal = document.getElementById(`${id}-modal`);
+    
+    if (modal) {
+      modal.classList.add("open");
+    } else {
+      console.warn(`Модалку з ID "${id}-modal" не знайдено`);
+    }
   }
 
-  // Відкрити
-  openBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    modal.classList.add("open");
-  });
+  // Close by button click
+  const closeBtn = e.target.closest('[id^="close-"]');
+  if (closeBtn) {
+    const modal = closeBtn.closest(".open");
+    if (modal) modal.classList.remove("open");
+  }
 
-  // Закрити по кнопці
-  closeBtn.addEventListener("click", () => modal.classList.remove("open"));
-
-  // Клік всередині модалки — не закриває
-  modalInner.addEventListener("click", (e) => {
-    e._inside = true;
-  });
-
-  // Клік поза модалкою — закриває
-  modal.addEventListener("click", (e) => {
-    if (e._inside) {
-      e._inside = false;
-      return;
-    }
-    modal.classList.remove("open");
-  });
+  // Closes on background click
+  if (e.target.classList.contains("open")) {
+    e.target.classList.remove("open");
+  }
 });
 
-// Закрити всі модалки по Esc
+// Close by Esc
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
-    allModalIds.forEach((id) => {
-      const modal = document.getElementById(`${id}-modal`);
-      modal?.classList.remove("open");
-    });
+    document.querySelector(".open")?.classList.remove("open");
   }
 });
+
 
 
 // AOS initialization
@@ -68,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
   AOS.init({
     duration: 800,
     easing: 'ease-out',
-    once: false,   // дозволяє повторну анімацію при скролі
-    mirror: true   // анімація працює і при скролі назад
+    once: false,   
+    mirror: true   
   });
 
   window.addEventListener('load', () => {
