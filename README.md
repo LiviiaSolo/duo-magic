@@ -26,12 +26,18 @@ The design was crafted by a professional designer in Figma, and the website was 
 
 
 ## My Role
-- Layout development — верстка всіх сторінок за готовим Figma‑дизайном.
-- Responsive design — адаптація сайту для мобільних, планшетів та великих екранів.
-- Animations — плавні переходи та ефекти, що підсилюють святкову атмосферу шоу.
-- Image optimization — оптимізація фотографій для швидкого завантаження.
-- UI adjustments — дрібні правки дизайну для кращої читабельності та візуальної гармонії.
-- Deployment preparation — підготовка структури проєкту для публікації на GitHub Pages.
+
+- Layout development — building all pages based on the provided Figma design.
+
+- Responsive design — adapting the website for mobile devices, tablets, and large screens.
+
+- Animations — creating smooth transitions and effects that enhance the festive atmosphere of the show.
+
+- Image optimization — optimizing photos for fast loading without losing quality.
+
+- UI adjustments — making small design refinements to improve readability and visual harmony.
+
+- Deployment preparation — preparing the project structure for deployment on GitHub Pages.
 
 
 ## Live Demo
